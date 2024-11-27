@@ -1,5 +1,5 @@
 FROM node:alpine
 WORKDIR /app
-COPY ./index.js /app/index.js
-EXPOSE 8080
-ENTRYPOINT [ "node", "/app/index.js" ]
+COPY ./index.js /src/index.js
+EXPOSE 5050
+ENTRYPOINT [ "node", "/src/index.js" ]
