@@ -30,7 +30,7 @@ jobs:
       
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: docker build -t ghcr.io/n0s0k69/22.11.24/app:latest ./app/
+        run: docker build -t ghcr.io/n0s0k69/22.11.24/node:latest ./app/
      
       - name: send telegram message on push  
         uses: appleboy/telegram-action@master
